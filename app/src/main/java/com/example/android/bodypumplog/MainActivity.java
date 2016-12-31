@@ -75,6 +75,15 @@ public class MainActivity extends BaseActivity {
             userID = receivedIntent.getStringExtra(Intent.EXTRA_TEXT);
             //((TextView)findViewById(R.id.tv_user)).setText(userID);
         }
+
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
     }
     private class ScreenSlidePagerAdapter extends FragmentStatePagerAdapter {
         public ScreenSlidePagerAdapter(FragmentManager fm) {

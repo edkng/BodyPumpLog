@@ -37,7 +37,9 @@ public class RecordContract {
                     .build();
         }
 
-
+        public static String getSqlLastSession() {
+            return null;
+        }
     }
 
 
